@@ -17,8 +17,8 @@
   },
   "dependencies": {
      "react": "^0.13.3",
-      "react-json": "arqex/react-json#996c02cab163593de59062b833cd515cac3b4b58",
-    "rx": "^2.5.2",
-    "rx-dom": "6.0.0"
+     "react-json": "arqex/react-json#996c02cab163593de59062b833cd515cac3b4b58",
+     "rx": "^2.5.2",
+     "rx-dom": "6.0.0"
   }
 }

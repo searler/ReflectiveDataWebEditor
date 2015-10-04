@@ -2,7 +2,6 @@ var React = require('react');
 var RxDom = require('rx-dom');
 var Editor = require('react-json');
 
-
 class JsonUpdate extends React.Component {
 
     constructor(props) {
@@ -12,9 +11,9 @@ class JsonUpdate extends React.Component {
 
         this.state = {
             value: {},
-            settings: null
-        };
-    }
+            settings : null
+            }
+         }
 
     componentDidMount() {
         Rx.DOM.ajax("/status/" + this.props.name)
@@ -37,8 +36,7 @@ class JsonUpdate extends React.Component {
         var str = JSON.stringify(value);
         Rx.DOM.ajax({url: "/apply/" + this.props.name, body: str, method: "POST"})
             .subscribe(
-            (data) => {
-            },
+            (data) => {},
             (error) => {
                 console.log(error);
             }
@@ -47,7 +45,7 @@ class JsonUpdate extends React.Component {
 
     render() {
         if (this.state.settings == null)
-            return <div />;
+            return <div />; 
         else
             return (
                 <Editor value={this.state.value} settings={this.state.settings} onChange={this.postChange}></Editor>);
