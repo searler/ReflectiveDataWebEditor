@@ -1,0 +1,24 @@
+{
+  "name": "ReflectiveWebDataEditor",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -wdc --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Richard Searle",
+  "devDependencies": {
+    "babel-core": "^5.1.11",
+    "babel-loader": "^5.0.0",
+    "css-loader": "^0.15.1",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.8.9"
+  },
+  "dependencies": {
+     "react": "^0.13.3",
+      "react-json": "arqex/react-json#996c02cab163593de59062b833cd515cac3b4b58",
+    "rx": "^2.5.2",
+    "rx-dom": "6.0.0"
+  }
+}
