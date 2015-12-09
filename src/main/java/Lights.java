@@ -1,5 +1,7 @@
+/**
+ * Illustrative simple Java class
+ */
 public class Lights {
-
 	private final Color indicator;
 	private final GoodBad builtinTest;
 	private final float temperature;

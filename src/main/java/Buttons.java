@@ -1,3 +1,6 @@
+/**
+ * Illustrative simple Java class
+ */
 public class Buttons {
 	private final boolean one;
 	private final boolean two;
